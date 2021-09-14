@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;900&display=swap');
 body{
+  margin: 0px;
+  font-family: 'Noto Sans JP',fantasy;
+  font-weight: 300!important;
   background: rgba(100, 240, 10, 0.5);
+}
+#main-header{
+  border-bottom:  1px solid #000;
+}
+  header {
+  background: rgb(255,255,255);
+  color: #0af;
+}
+body h3{
+  color: #0af;
 }
