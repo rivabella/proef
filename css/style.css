@@ -8,10 +8,11 @@ body{
 #main-header{
   border-bottom:  1px solid #000;
 }
+#top-stories{
+  width: 1000px;
+  margin: auto;
+}
   header {
   background: rgb(255,255,255);
-  color: #0af;
-}
-body h3{
   color: #0af;
 }
