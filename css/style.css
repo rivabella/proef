@@ -5,6 +5,9 @@ body{
   font-weight: 300!important;
   background: rgba(100, 240, 10, 0.5);
 }
+h3{
+  font-weight: bold;
+}
 #main-header{
   border-bottom:  1px solid #000;
 }
