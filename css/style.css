@@ -45,7 +45,9 @@ article img{
   background-position: center !important;
 }
 
-
+a{
+  text-decoration:line-through ;
+}
 .more-link{
  font-style: italic;
 
@@ -53,8 +55,5 @@ article img{
 .bolded-link{
   font-weight:900;
   color: #f00;
-
-}
-.more-link.bolded-link{
 
 }
