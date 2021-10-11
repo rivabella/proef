@@ -47,6 +47,8 @@ article img{
 
 a{
   text-decoration:line-through ;
+  text-decoration-color: #000;
+  text-decoration-style: wavy;
 }
 .more-link{
  font-style: italic;
@@ -60,4 +62,6 @@ a{
 p{
   letter-spacing: 2px;
   word-spacing: 2px;
+  text-indent: 20px;
+  text-align: center;
 }
