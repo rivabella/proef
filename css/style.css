@@ -44,9 +44,17 @@ article img{
   background-size: cover !important;
   background-position: center !important;
 }
+
+
 .more-link{
-font-style: italic;
+ font-style: italic;
+
 }
 .bolded-link{
-  font-weight:  300;
+  font-weight:900;
+  color: #f00;
+
+}
+.more-link.bolded-link{
+
 }
