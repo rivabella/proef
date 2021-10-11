@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300;400;500;600;700;800&display=swap');
 body{
   margin: 0px;
-  font-family: 'Noto Sans JP',fantasy;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 300!important;
   background: rgba(100, 240, 10, 0.5);
 }
 h3{
   font-weight: bold;
+}
+#site-title{
+  font-family: 'Gemunu Libre', sans-serif;
+
 }
 #main-header{
   border-bottom:  1px solid #000;
@@ -14,7 +19,7 @@ h3{
 #top-stories{
   width:600px;
   margin: auto;
-  margin-top: 10px;
+  margin-top: 20px;
 }
   header {
   background: rgb(255,255,255);
@@ -38,4 +43,10 @@ article img{
   width: 100%;
   background-size: cover !important;
   background-position: center !important;
+}
+.more-link{
+font-style: italic;
+}
+.bolded-link{
+  font-weight:  300;
 }
