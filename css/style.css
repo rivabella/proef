@@ -50,8 +50,9 @@ a{
   text-decoration:none;
   text-decoration-color: #000;
   /* text-decoration-style: wavy; */
-  text-shadow: 2px 5px 5px #000
+
 }
+
 .more-link{
  font-style: italic;
 
