@@ -40,11 +40,10 @@ article img{
   max-width: 100%;
 }
 .article-image{
-  height:200px;
-  width: 200px;
+  height: 300px;
+  width: 100%;
   background-size: cover !important;
   background-position: center !important;
-  border-radius: 100%;
 }
 
 a{
