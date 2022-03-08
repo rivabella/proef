@@ -21,6 +21,9 @@ h3{
   background: rgba(255, 255, 255, 9);
 
 }
+
+#nav li { float: left;  display: inline; }
+
 #top-stories{
   width:600px;
   margin: auto;
@@ -45,6 +48,23 @@ article img{
   max-width: 100%;
 }
 .article-image{
+  height: 300px;
+  width: 100%;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+nav input[type="checkbox"] {
+    display: none;
+}
+nav ul {
+    display: none;
+}
+nav input[type="checkbox"]:checked ~ ul {
+    display: block;
+}
+
+cat-image{
   height: 300px;
   width: 100%;
   background-size: cover !important;
