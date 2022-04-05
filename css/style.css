@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300;400;500;600;700;800&display=swap');
 body{
-  margin-top: 150px;
+  /* margin-top: 180px;
+  margin-left: 0px; */
+  margin: 180px 5px;
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: 300!important;
   background: rgba(100, 240, 10, 0.5);
-  margin-left: 0%;
+
 }
 h3{
   font-weight: bold;
@@ -19,9 +21,11 @@ h3{
   position: fixed;
   width: 100%;
   background: rgba(255, 255, 255, 9);
-  margin: 0%;
+  top:0%;
+  left: 0%;
 
 }
+
 
 
 
@@ -38,7 +42,7 @@ article{
 
   width: 110px;
  display: inline-block;
- /* border :1px solid #000; */
+ border :1px solid #000;
  padding: 10px;
  box-shadow: 5px 5px 5px 10px rgba(0, 0, 0, 0.5);
 
@@ -66,27 +70,41 @@ nav ul {
 }
 nav ul li{
   display: inline-block;
- float: left;
 
- padding-left:10px;
+
+ margin-left: 20px;
+ box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+ padding: 10px;
 
 }
 nav input[type="checkbox"]:checked ~ ul {
     display: block;
 }
 
-cat-image{
-  height: 300px;
-  width: 100%;
-  background-size: cover !important;
-  background-position: center !important;
+
+
+a:link {
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
 }
 
-a{
-  text-decoration:none;
-  text-decoration-color: #000;
-  /* text-decoration-style: wavy; */
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
 
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
 }
 
 .more-link{
@@ -98,11 +116,7 @@ a{
   color: #f00;
 
 }
-a:hover{
-  text-decoration: underline;
-  text-decoration-color: #111;
-    text-shadow: 2px 5px 5px #000
-}
+
 p{
   letter-spacing: 2px;
   word-spacing: 2px;
@@ -112,7 +126,7 @@ p{
 .my-input{
   display: block;
   width: 100%;
-  margin: 20px;
+  /* margin: 20px; */
   padding: 10px 20px;
 
 }
@@ -124,4 +138,7 @@ p{
 }
 article:active{
   opacity: .4;
+}
+.mysound{
+
 }
