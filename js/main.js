@@ -33,6 +33,15 @@
 // }else{
 //   console.log("je bent niet in onze database")
 // }
-for(var optellen=10; optellen>4; optellen--){
- console.log("het getal is nu", optellen);
+// for(var optellen=10; optellen>4; optellen--){
+//  console.log("het getal is nu", optellen);
+// }
+function ietsZeggen(){
+  console.log("ik zeg iets");
 }
+ietsZeggen();
+
+function voorstellen(name, age){
+  console.log("mijn naam is", name, "en mijn leeftijd is",age);
+}
+voorstellen("pieter",75);
