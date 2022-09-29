@@ -36,12 +36,9 @@
 // for(var optellen=10; optellen>4; optellen--){
 //  console.log("het getal is nu", optellen);
 // }
-function ietsZeggen(){
-  console.log("ik zeg iets");
-}
-ietsZeggen();
+var btn= document.getElementById("go");
+function buttonClicked(){
+  console.log("button clicked");
 
-function voorstellen(name, age){
-  console.log("mijn naam is", name, "en mijn leeftijd is",age);
 }
-voorstellen("pieter",75);
+btn.addEventListener("click",buttonClicked);
