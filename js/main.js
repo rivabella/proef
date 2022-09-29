@@ -39,6 +39,7 @@
 var btn= document.getElementById("go");
 function buttonClicked(){
   console.log("button clicked");
+  btn.removeEventListener("click", buttonClicked);
 
 }
 btn.addEventListener("click",buttonClicked);
