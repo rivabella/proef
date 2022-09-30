@@ -40,6 +40,7 @@ var btn= document.getElementById("go");
 function buttonClicked(){
   console.log("button clicked");
   btn.removeEventListener("click", buttonClicked);
+  document.getElementById("peter").innerHTML="ik ben peter";
 
 }
 btn.addEventListener("click",buttonClicked);
