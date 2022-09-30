@@ -51,3 +51,15 @@ console.log("dit waren mijn hobbies",hobbies);
 console.log("deze gaat weg", hobbies.pop());
 hobbies.push("baskedbal");
 console.log("Dit zijn mijn hobbies nu", hobbies);
+console.log("dit is mijn favo", hobbies[hobbies.length-1]);
+hobbies.forEach(function(print,){
+  console.log("i like",print)
+});
+hobbies.shift();
+hobbies.forEach(function(print,){
+  console.log("i like",print)
+});
+hobbies.unshift("wielrennen")
+hobbies.forEach(function(print,){
+  console.log("i like",print)
+});
