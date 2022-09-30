@@ -41,6 +41,13 @@ function buttonClicked(){
   console.log("button clicked");
   btn.removeEventListener("click", buttonClicked);
   document.getElementById("peter").innerHTML="ik ben peter";
-
+  console.log(document.getElementById("peter").innerHTML);
 }
 btn.addEventListener("click",buttonClicked);
+
+var hobbies = ["voedbal", "tennis", "korfbal"];
+console.log("dit waren mijn hobbies",hobbies);
+
+console.log("deze gaat weg", hobbies.pop());
+hobbies.push("baskedbal");
+console.log("Dit zijn mijn hobbies nu", hobbies);
