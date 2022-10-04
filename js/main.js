@@ -63,3 +63,16 @@ hobbies.unshift("wielrennen")
 hobbies.forEach(function(print,){
   console.log("i like",print)
 });
+var indexnum= hobbies.indexOf("baskedbal");
+console.log(indexnum);
+
+hobbies.splice(indexnum,1);
+console.log(hobbies);
+if(hobbies.indexOf("wielrennen")>-1){
+  console.log("wielrennen is in de array");
+}
+if(hobbies.indexOf("sport") > -1){
+
+}else{
+  console.log("Sport is niet in de array");
+}
