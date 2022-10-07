@@ -36,19 +36,19 @@
 // for(var optellen=10; optellen>4; optellen--){
 //  console.log("het getal is nu", optellen);
 // }
-var btn= document.getElementById("go");
-
-function buttonClicked(){
-  // console.log("button clicked");
-  var my_answer= document.getElementsByClassName("info");
-  var text_output = document.getElementById("peter");
-  text_output.innerHTML= "Hallo " + my_answer[0].value;
-  // btn.removeEventListener("click", buttonClicked);
-  // document.getElementById("peter").innerHTML="ik ben peter";
-  // console.log(document.getElementById("peter").innerHTML);
-}
-
-btn.addEventListener("click",buttonClicked);
+// var btn= document.getElementById("go");
+//
+// function buttonClicked(){
+//   // console.log("button clicked");
+//   var my_answer= document.getElementsByClassName("info");
+//   var text_output = document.getElementById("peter");
+//   text_output.innerHTML= "Hallo " + my_answer[0].value;
+//   // btn.removeEventListener("click", buttonClicked);
+//   // document.getElementById("peter").innerHTML="ik ben peter";
+//   // console.log(document.getElementById("peter").innerHTML);
+// }
+//
+// btn.addEventListener("click",buttonClicked);
 
 // var hobbies = ["voedbal", "tennis", "korfbal"];
 // console.log("dit waren mijn hobbies",hobbies);
@@ -81,3 +81,22 @@ btn.addEventListener("click",buttonClicked);
 // }else{
 //   console.log("Sport is niet in de array");
 // }
+function saySomething(phrase){
+  alert("you said:" + phrase);
+}
+var p ="how are you?";
+saySomething(p);
+
+function getLength(zin, hallo){
+  var l = zin.length;
+      if(typeof hallo !== "undefined")
+      {l += hallo.length;}
+
+
+  return l;
+}
+
+var woord = "bla bla bla";
+var hopla  ="ziezo";
+var woordHopla = getLength(woord);
+console.log(woordHopla);
