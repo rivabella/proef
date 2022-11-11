@@ -81,22 +81,25 @@
 // }else{
 //   console.log("Sport is niet in de array");
 // }
-function saySomething(phrase){
-  alert("you said:" + phrase);
+// function saySomething(phrase){
+//   alert("you said:" + phrase);
+// }
+// var p ="how are you?";
+// saySomething(p);
+//zet het inkomende in de functie op params en voeg params. toe aan de variabele zodat de waardes van 1 erin gezet kunnen worden
+function getPhrase(params){
+       var l = params.zin.length;
+
+
+  if(typeof params.hopla !== "undefined"){
+     l += params.hopla.length;
+   }
+
+return l
 }
-var p ="how are you?";
-saySomething(p);
 
-function getLength(zin, hallo){
-  var l = zin.length;
-      if(typeof hallo !== "undefined")
-      {l += hallo.length;}
-
-
-  return l;
-}
-
-var woord = "bla bla bla";
-var hopla  ="ziezo";
-var woordHopla = getLength(woord);
+var p1 = "bla bla bla";
+var p2 ="ziezo";
+// 1 in javascript maak je een object door {}toe te voegen {zin:p1,hopla:p2} = een object met een key en een value hierna zie aanpassing 2
+var woordHopla = getPhrase({zin:ps,hopla:p2});
 console.log(woordHopla);
