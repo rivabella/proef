@@ -100,6 +100,6 @@ return l
 
 var p1 = "bla bla bla";
 var p2 ="ziezo";
-// 1 in javascript maak je een object door {}toe te voegen {zin:p1,hopla:p2} = een object met een key en een value hierna zie aanpassing 2
-var woordHopla = getPhrase({zin:ps,hopla:p2});
+// 1 verander nu de value van zin in ""empty dan doet de functie het alsnog met de waarde van P2
+var woordHopla = getPhrase({zin:"",hopla:p2});
 console.log(woordHopla);
