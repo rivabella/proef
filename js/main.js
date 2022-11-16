@@ -87,23 +87,20 @@
 // var p ="how are you?";
 // saySomething(p);
 //zet het inkomende in de functie op params en voeg params. toe aan de variabele zodat de waardes van 1 erin gezet kunnen worden
-function getPhrase(params){
-var l = 0;
 
-      if(typeof params.zin!=="undefined"){
-        l = params.zin.length;
-      }
+var nummers = [1, 2, 7, 8, 15, 16, 17, 18, 10, 11, 12, 13, 14, 9, 18, 20, 3, 4, 5];
+var result=[];
+var count = 21;
+ for(i=1;i<count;i++){
+   if(nummers.indexOf(i)==-1)
+   {result.push(i)};
+ }
+ console.log(result);
 
+function sortNummers(){
+  nummers.sort();
 
-  if(typeof params.hopla !== "undefined"){
-     l += params.hopla.length;
-   }
-
-return l
+return nummers;
 }
-
-var p1 = "bla bla bla";
-var p2 ="ziezo";
-//nu halen we de eerste key weg, zonder iets anders te doen freaked die out dus ga naar 2
-var woordHopla = getPhrase({zin:p1, hopla:p2});
-console.log(woordHopla);
+sortNummers(nummers);
+console.log(nummers);
