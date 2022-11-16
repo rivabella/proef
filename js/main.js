@@ -88,7 +88,11 @@
 // saySomething(p);
 //zet het inkomende in de functie op params en voeg params. toe aan de variabele zodat de waardes van 1 erin gezet kunnen worden
 function getPhrase(params){
-       var l = params.zin.length;
+var l = 0;
+
+      if(typeof params.zin!=="undefined"){
+        l = params.zin.length;
+      }
 
 
   if(typeof params.hopla !== "undefined"){
@@ -100,6 +104,6 @@ return l
 
 var p1 = "bla bla bla";
 var p2 ="ziezo";
-// 1 verander nu de value van zin in ""empty dan doet de functie het alsnog met de waarde van P2
-var woordHopla = getPhrase({zin:"",hopla:p2});
+//nu halen we de eerste key weg, zonder iets anders te doen freaked die out dus ga naar 2
+var woordHopla = getPhrase({zin:p1, hopla:p2});
 console.log(woordHopla);
