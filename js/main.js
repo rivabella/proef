@@ -88,19 +88,26 @@
 // saySomething(p);
 //zet het inkomende in de functie op params en voeg params. toe aan de variabele zodat de waardes van 1 erin gezet kunnen worden
 
-var nummers = [1, 2, 7, 8, 15, 16, 17, 18, 10, 11, 12, 13, 14, 9, 18, 20, 3, 4, 5];
+var nummers = [ 7, 8, 15, 16, 17, 18, 10, 11, 12, 13, 14, 9, 18, 20, 3, 4, 5];
 var result=[];
 var count = 21;
- for(i=1;i<count;i++){
+//in deze worden de cijvers echt in de goede volgorde gezet
+function compareNumbers(a, b) {
+  return a - b;
+}
+//hier worden de nummer gesorteerd
+var sorted = nummers.sort(compareNumbers);
+//sorted[0] hierbij begint het getal altijd bij het eerste dus als je de cijvers 0,1,2, weghaald begint het gewoon bij 3
+ for(i=sorted[0];i<count;i++){
    if(nummers.indexOf(i)==-1)
    {result.push(i)};
  }
  console.log(result);
 //dit is de sort funtie die wordt zometeen en de for loop gezet
-function sortNummers(){
-  nummers.sort();
-
-return nummers;
-}
-sortNummers(nummers);
-console.log(nummers);
+// function sortNummers(){
+//   nummers.sort();
+//
+// return nummers;
+// }
+// sortNummers(nummers);
+// console.log(nummers);
