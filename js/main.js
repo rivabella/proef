@@ -96,7 +96,7 @@ var count = 21;
    {result.push(i)};
  }
  console.log(result);
-
+//dit is de sort funtie die wordt zometeen en de for loop gezet
 function sortNummers(){
   nummers.sort();
 
