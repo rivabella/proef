@@ -120,6 +120,7 @@ class Animal{
     console.log("dier dat gemaakt is heet", naam)
     // this is voor het object wat gemaakt is dus in dit geval dog en fish
     // we nemen de parameters die alleen in de constructor te gebruiken zijn en we maken properties van het object
+// dit zijn unique variabelen
     this.naam = naam;
     this.height =height;
     this.weight = weight;
@@ -130,8 +131,13 @@ class Animal{
   }
 
 }
+//dit is geen unique object maar het is altijd hetzelfde
+// class level variabele
+Animal.planet = "earth";
 // de parapeters("doggie" etc.) worden direct in de constructor gezet
 var dog = new Animal("doggie", 2, 3 );
 var fish = new Animal("fishy", 2, 3);
 // zo roep je de method in de class van het obect aan het object is dus nu dog
 console.log(dog.nameLength());
+// zo roep je de niet unique vvaraibele gaan
+console.log(dog.constructor.planet);
