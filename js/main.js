@@ -12,6 +12,4 @@ document.getElementsByClassName('info').value = "Waarde";
 // jquery
 $('.info').val("dit is nu mijn text");
 
-
-// kiuglyguy
 })
