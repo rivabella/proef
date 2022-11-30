@@ -13,5 +13,5 @@ document.getElementsByClassName('info').value = "Waarde";
 $('.info').val("dit is nu mijn text");
 
 
-
+// kiuglyguy
 })
