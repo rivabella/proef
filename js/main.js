@@ -141,3 +141,44 @@ var fish = new Animal("fishy", 2, 3);
 console.log(dog.nameLength());
 // zo roep je de niet unique vvaraibele gaan
 console.log(dog.constructor.planet);
+
+//om de class animal te vergroten kan je hem extenden
+class Hond extends Animal
+ {
+   // weer de constructor met de variabelen uit de Animal class en wat extra
+    // variabelen
+  constructor(naam, height, weight, bark, lashColor ) {
+// zo neem je de variabelen van Animal mee
+    super(naam,height,weight);
+  // alleen nog de laatste 2 variabelen zijn nu nodig
+    this.bark = bark;
+    this.lahColor = lashColor;
+}
+bark(){
+      if(this.bark>50){
+        console.log(this.naam, "blaft hard");
+      }else{
+        console.log(this.name, "flaft niet zo hard");
+      }
+    }
+  }
+// instantinate
+var Pablo = new Hond("Pablo", 2, 3, 30,"brown");
+// call class bark funtion
+Pablo.bark();
+
+class Fish extends Animal {
+  constructor(naam, height, weight, snelheid) {
+    super(naam,height,weight);
+    this.snelheid = snelheid;
+  }
+  zwem(){
+    if(this.snelheid > 20){
+      console.log(this.naam, "zwemt snel");
+    }else{"vis zwemt langzaam"}
+  }
+}
+
+var Goldie = new Fish("gold", 6, 8, 50);
+
+Goldie.zwem();
