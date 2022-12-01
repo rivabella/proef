@@ -17,7 +17,23 @@
       <!-- hfst 66 dropdown -->
       <ul class="profile-menu">
         <li>
-          <a  class="profile-menu-trigger" href="#">your nickname is Nick</a>
+          <!-- in elk atribut van html kan je een data atribut zetten.als we dit data-trigger="dropdown"aanraken zou je in de parent element submenu kunen vinden -->
+          <a  class="profile-menu-trigger" data-trigger="dropdown" href="#">your nickname is Nick</a>
+               <ul class="profile-submenu submenu">
+                 <li>
+                   <a href="#">My account</a>
+                 </li>
+                 <li>
+                   <a href="#">profile</a>
+                 </li>
+                 <li>
+                   <a href="#">Settings</a>
+                 </li>
+                 <li>
+                   <a href="#">Log out</a>
+                 </li>
+               </ul>
+
         </li>
 
       </ul>

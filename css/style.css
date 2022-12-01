@@ -18,6 +18,29 @@ h3{
 .profile-menu{
   list-style: none;
   float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.submenu{
+  list-style: none;
+  padding: 0px;
+  border: solid 1px #aaa;
+  background: #fff;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
+  width: 200px;
+  position: absolute;
+  right: 10px;
+}
+/* dit vind alle a's in de submenu's */
+.submenu a{
+  text-decoration: none;
+  padding: 10px 10px;
+  display:block;
+  color: #333;
+  font-weight: 450;
+}
+.submenu a:hover{
+  background: #eee;
 }
 #main-header{
   border-bottom:  1px solid #000;
