@@ -11,9 +11,13 @@ h3{
   font-weight: bold;
 }
 #site-title{
-  font-family: 'Gemunu Libre', sans-serif;
-  z-index: 2;
-
+  /* font-family: 'Gemunu Libre', sans-serif;
+  z-index: 2; */
+  display: inline-block;
+}
+.profile-menu{
+  list-style: none;
+  float: right;
 }
 #main-header{
   border-bottom:  1px solid #000;

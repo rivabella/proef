@@ -12,4 +12,13 @@ document.getElementsByClassName('info').value = "Waarde";
 // jquery
 $('.info').val("dit is nu mijn text");
 
+var tekst = document.getElementById('peter');
+// javascript
+console.log("tekst is", tekst);
+// jquery
+console.log("tekst is:", $(tekst);
+$('#go').on('click', function(){
+  alert("piepo");
+})
+
 })
