@@ -42,6 +42,9 @@ h3{
 .submenu a:hover{
   background: #eee;
 }
+.submenu.active{
+  display: block;
+}
 #main-header{
   border-bottom:  1px solid #000;
   position: fixed;
