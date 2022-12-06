@@ -21,6 +21,7 @@ h3{
   margin-top: 20px;
   margin-right: 20px;
 }
+
 .submenu{
   list-style: none;
   padding: 0px;
@@ -30,21 +31,25 @@ h3{
   width: 200px;
   position: absolute;
   right: 10px;
+display:none;
+  z-index: 2;
 }
 /* dit vind alle a's in de submenu's */
 .submenu a{
   text-decoration: none;
   padding: 10px 10px;
-  display:block;
+
   color: #333;
   font-weight: 450;
+}
+.submenu.active{
+  display: block;
+  background: #eee
 }
 .submenu a:hover{
   background: #eee;
 }
-.submenu.active{
-  display: block;
-}
+
 #main-header{
   border-bottom:  1px solid #000;
   position: fixed;
@@ -178,6 +183,7 @@ p{
   width: 100%;
   margin: 0px;
   padding: 10px 20px;
+
 
 }
 .my-input:focus{

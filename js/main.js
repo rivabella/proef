@@ -16,7 +16,7 @@ var tekst = document.getElementById('peter');
 // javascript
 console.log("tekst is", tekst);
 // jquery
-console.log("tekst is:", $(tekst);
+console.log("tekst is:", $(tekst));
 $('#go').on('click', function(){
   alert("piepo");
 })
@@ -27,6 +27,12 @@ $('[data-trigger="dropdown"]').on('mouseover',function(){
   var submenu = $(this).parent().find('.submenu');
   // omdat er al een $ in de variabele zit hoeft dat niet hieronder
   submenu.addClass('active');
+
+
 })
+$(this).on('mouseleave',function(){
+  submenu.removeClass('active');
+})
+
 
 })
