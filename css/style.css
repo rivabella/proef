@@ -198,3 +198,8 @@ article:active{
 .mysound{
 
 }
+section{
+  max-width: 100%;
+  width: 600px;
+  margin: auto;
+}

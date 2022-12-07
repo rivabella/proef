@@ -19,7 +19,7 @@ console.log("tekst is", tekst);
 console.log("tekst is:", $(tekst));
 $('#go').on('click', function(){
   alert("piepo");
-})
+});
 // $('[data-trigger="dropdown"]').on('mouseover', is de trigger dus als de muis erover
 // heen gaat wordt de functie aangeroepen
 $('[data-trigger="dropdown"]').on('mouseover',function(){
@@ -27,12 +27,27 @@ $('[data-trigger="dropdown"]').on('mouseover',function(){
   var submenu = $(this).parent().find('.submenu');
   // omdat er al een $ in de variabele zit hoeft dat niet hieronder
   submenu.addClass('active');
-
-
 })
-$(this).on('mouseleave',function(){
-  submenu.removeClass('active');
-})
+// targeting multiple elements using the event
+// e staat voor event
+$('#append, #prepend, #replace').on('click',function(e){
+console.log(e);
+// in de lijst van console log zie je currenTarget die je aanraken
+// roept door e.currenTarget
+var el = $(e.currentTarget);
+// getting atributes of jquery opjects
+var action = el.attr('id');
+
+if(action== "append"){
+  console.log("appendinng...");
+}else if (action == "prepend") {
+  console.log("preppendinng...");
+} else if (action == "replace") {
+  console.log("replacinng...");
+}else {
+
+}
 
 
-})
+});
+});
