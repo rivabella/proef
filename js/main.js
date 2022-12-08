@@ -37,17 +37,20 @@ console.log(e);
 var el = $(e.currentTarget);
 // getting atributes of jquery opjects
 var action = el.attr('id');
-
+var value = $('textarea[name="text"]').val();
+console.log(value);
 if(action== "append"){
   console.log("appendinng...");
+  $("#main").append(value);
 }else if (action == "prepend") {
   console.log("preppendinng...");
+    $("#main").prepend(value);
 } else if (action == "replace") {
   console.log("replacinng...");
+    $('#main').text(value);
 }else {
 
 }
-
 
 });
 });
