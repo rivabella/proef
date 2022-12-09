@@ -1,4 +1,21 @@
 $(document).ready(function() {
+
+$(document).on('mousedown',function(event){
+  event.preventDefault();
+
+  switch (event.which) {
+    case 1:
+      console.log("je drukte de rechter");
+      break;
+    case 2:
+       console.log("je drukte de middelste");
+      break;
+      case 3:
+        console.log("je drukte de linker");
+        break;
+
+  }
+})
   alert("loaded");
   // javascript
   document.getElementById('peter').innerHTML = "this is my tekst";
