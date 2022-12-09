@@ -203,3 +203,25 @@ section{
   width: 600px;
   margin: auto;
 }
+#context{
+  display: inline-block;
+  position: absolute;
+  background: #fff;
+  box-shadow:10px,10px,15px;
+  
+}
+.context-menu{
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+
+}
+.context-menu a{
+  padding: 30px;
+  margin: 10px;
+  display: block;
+}
+.context-menu a:hover{
+background-color: #555;
+shadow:10px;
+}

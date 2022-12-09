@@ -1,20 +1,31 @@
 $(document).ready(function() {
 
 $(document).on('mousedown',function(event){
-  event.preventDefault();
+  event.stopPropagation();
 
-  switch (event.which) {
-    case 1:
-      console.log("je drukte de rechter");
-      break;
-    case 2:
-       console.log("je drukte de middelste");
-      break;
-      case 3:
-        console.log("je drukte de linker");
-        break;
+  // switch (event.which) {
+  //   case 1:
+  //     console.log("je drukte de rechter");
+  //     break;
+  //   case 2:
+  //      console.log("je drukte de middelste");
+  //     break;
+  //     case 3:
+  //       console.log("je drukte de linker");
+  //       break;
+  //
+  // }
+  if(event.which == 1){
+    console.log(event.pageY,event.pageX);
+    $('#context').css({
+      top: event.pageY,
+      left: event.pageX    });
+
+    $('#context').fadeIn();
+    return false;
 
   }
+  $('#context').fadeOut();
 })
   alert("loaded");
   // javascript
