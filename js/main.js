@@ -1,6 +1,12 @@
-$(document).ready(function() {
 
-$(document).on('mousedown',function(event){
+
+$(document).ready(function() {
+// om de functie uit second.js te halen moet je hem aangeroepen
+var s = new rquery("lorem");
+
+// $==jquery,jQuery is een class declaration.jQuery(document).on('mousedown'
+// lijkt nu een functie
+jQuery(document).on('mousedown',function(event){
   event.stopPropagation();
 
 
