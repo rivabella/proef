@@ -1,6 +1,8 @@
 
 
 $(document).ready(function() {
+  console.log($('.submenu a').first().text());
+    console.log($('.submenu a').last().text());
 $('#top-stories').find('.article-image').addClass('haha');
 // H74 om de functie uit second.js te halen moet je hem aangeroepen
 // via var s = new rquery("lorem");
