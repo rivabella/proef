@@ -1,9 +1,14 @@
 
 
 $(document).ready(function() {
-// om de functie uit second.js te halen moet je hem aangeroepen
-var s = new rquery("lorem");
-
+// H74 om de functie uit second.js te halen moet je hem aangeroepen
+// via var s = new rquery("lorem");
+// var s = new rquery("lorem");
+// je roept de functie qQuery aan waardoor de class accesible wordt.In de class
+// staat de functie addClass deze kun je toepassen door alleen een punt toe te voegen
+// met de functie erachter
+rQuery(".lorem").addClass("make-class");
+rQuery('#main').addClass("proef");
 // $==jquery,jQuery is een class declaration.jQuery(document).on('mousedown'
 // lijkt nu een functie
 jQuery(document).on('mousedown',function(event){
