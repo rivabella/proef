@@ -79,6 +79,7 @@ display:none;
   margin: auto;
 
 }
+
   header {
   background: rgb(255,255,255);
   color: #0af;
@@ -176,7 +177,9 @@ p{
   word-spacing: 2px;
   text-indent: 20px;
   text-align: center;
+
 }
+
 .my-input{
   display: block;
   position:fixed;
@@ -225,6 +228,7 @@ section{
 background-color: #555;
 shadow:10px;
 }
+
 
 .context-menu a.hidden{
   display: none;
