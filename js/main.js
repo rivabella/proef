@@ -21,6 +21,9 @@ $('p:contains("Lorem")').html("this texks beval lorem");
 if($(':contains("lorem")').hasClass('my-selector')) {
 console.log("has class my-selector");
 }
+$('p').each(function(){
+  console.log($(this).text());
+})
 });
 // // H74 om de functie uit second.js te halen moet je hem aangeroepen
 // // via var s = new rquery("lorem");
